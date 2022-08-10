@@ -23,6 +23,7 @@ module.exports = {
   rules: {
     'react/jsx-filename-extension': [1, { extensions: ['.tsx', '.ts'] }],
     'import/extensions': ['error', 'ignorePackages', { ts: 'never', tsx: 'never' }],
+    'no-shadow': ['error', { allow: ['isUserAuthenticated'] }],
     'import/prefer-default-export': 0,
     'no-unused-vars': 0,
   },
