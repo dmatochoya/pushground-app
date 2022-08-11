@@ -5,7 +5,7 @@ export const StyledTable = styled.table`
     flex-direction: column;
     flex-basis: 100%;
     font-size: 13px;
-    border: 1px solid rgb(#dee2e6);
+    border: 1px solid #dee2e6;
     overflow-x: scroll;
 `;
 
