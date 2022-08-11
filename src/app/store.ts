@@ -1,11 +1,11 @@
 import { configureStore, ThunkAction, Action } from '@reduxjs/toolkit';
-import mainSlice from '../slices/mainSlice';
 import { pushgroundApi } from './services/pushgroundApi';
+import mainSlice from './slices/mainSlice';
 
 export const store = configureStore({
   reducer: {
-    mainSlice,
     [pushgroundApi.reducerPath]: pushgroundApi.reducer,
+    mainSlice,
   },
   middleware: (getDefaultMiddleware) => (
     getDefaultMiddleware().concat(pushgroundApi.middleware)
