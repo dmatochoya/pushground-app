@@ -1,12 +1,12 @@
 import styled from 'styled-components';
 
 export const StyledTable = styled.table`
-    border: 1px solid rgb(222, 226, 230);
     display: flex;
     flex-direction: column;
     flex-basis: 100%;
-    overflow-x: scroll;
     font-size: 13px;
+    border: 1px solid rgb(#dee2e6);
+    overflow-x: scroll;
 `;
 
 interface TableRowProps {
@@ -16,16 +16,16 @@ interface TableRowProps {
 
 export const TableRow = styled.tr<TableRowProps>`
     display: flex;
-    border-bottom: 1px solid rgb(222,226,230);
-    height: 43px;
     align-items: center;
-    padding: 0 20px;
     min-width: fit-content;
+    height: 43px;
     background-color: ${({ isGrayed }) => (
-    isGrayed ? 'rgb(244, 246, 249)' : 'rgb(255, 255, 255)'
+    isGrayed ? '#f4f6f9' : '#fff'
   )};
+    padding: 0 20px;
+    border-bottom: 1px solid #dee2e6;
 
-    ${({ isStatRow }) => (isStatRow && '&:hover { background: rgb(230, 232, 235) }')} 
+    ${({ isStatRow }) => (isStatRow && '&:hover { background: #e6e8eb }')} 
 `;
 
 export const TotalTableRow = styled(TableRow)`
@@ -60,7 +60,7 @@ export const RefetchButton = styled.button`
     width: 33px;
     height: 33px;
     padding: 5px;
-    border: 1px solid rgb(0, 0, 0);
+    border: 1px solid #000;
     border-radius: 4px;
     margin: 10px 0;
     transition: all 0.2s linear 0s;
@@ -78,5 +78,5 @@ export const ClipLoaderContainer = styled.tr`
 `;
 
 export const ErrorMessage = styled.h4`
-    color: red;
+    color: #ff0000;
 `;

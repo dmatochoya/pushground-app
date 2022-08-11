@@ -18,7 +18,6 @@ const GlobalStyles = createGlobalStyle`
       background-color: transparent;
       border: none;
       cursor: pointer;
-      -webkit-tap-highlight-color: transparent;
     }
 `;
 

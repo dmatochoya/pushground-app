@@ -28,7 +28,7 @@ export const UserNameContainer = styled.span`
 
 export const Caret = styled(FaCaretUp)`
     transition: transform 0.4s;
-    transform: ${({ transform }) => transform}
+    transform: ${({ transform }) => transform};
 `;
 
 export const StyledMain = styled.div`

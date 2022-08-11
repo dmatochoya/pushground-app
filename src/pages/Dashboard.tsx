@@ -7,6 +7,7 @@ import { StyledMain } from '../components/styles/DashboardHeaderAndMain.styled';
 function Dashboard() {
   const dateObj = new Date();
   const dateOneWeekAgo = new Date(dateObj.setDate(dateObj.getDate() - 7));
+
   const [startDate, setStartDate] = useState(dateOneWeekAgo);
   const [endDate, setEndDate] = useState(new Date());
 
